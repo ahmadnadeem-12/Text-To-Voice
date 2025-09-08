@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace,verdana;
+}
+.container{
+    background: linear-gradient(45deg, rgb(69, 69, 189),purple);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+span{
+    color:  rgb(236, 15, 89);
+    text-decoration: underline;
+}
+.inside-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+textarea{
+    min-width: 500px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(95, 120, 151, 0.3);
+    border: none;
+    outline: none;
+    resize: none;
+}
+textarea::placeholder{
+    color: white;
+}
+.select-listen{
+    display: flex;
+}
+select{
+    flex: 1;
+    appearance: none;
+    border-radius: 20px;
+    background-color: rgba(95, 120, 151, 0.3);
+    background-image: url(dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: right 20px center;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    height: 40px;
+    padding: 2px  40px 2px 10px;
+}
+button{
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(236, 15, 89);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+button:hover{
+    background-color: rgb(185, 10, 69);
+}
+button img{
+    width: 20px;
+}
